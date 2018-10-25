@@ -83,3 +83,65 @@ p {
   cursor: pointer;
   margin-top: 142px;
 }
+
+.about {
+  color: #696969;
+}
+
+.about__header {
+  border-bottom: 1px solid #ebebeb;
+  padding: 21px 0;
+}
+
+.logo a {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  color: #696969;
+  text-decoration: none;
+}
+
+.menu {
+}
+
+.menu__item a {
+  text-transform: uppercase;
+  color: #696969;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.menu__item a:hover {
+  border-bottom: 1px solid #d07c7c;
+  padding-bottom: 10px;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.about__content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 142px 0;
+}
+
+.about__title {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #595959;
+}
+
+.about__line {
+  background: #d07c7c;
+  height: 2px;
+  width: 65px;
+  margin: 41px 0;
+}
+
+.about__desc {
+  font-size: 14px;
+  font-weight: 300;
+}
