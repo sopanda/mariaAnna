@@ -1,0 +1,85 @@
+/* font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+p {
+  line-height: 1.9em;
+}
+
+.header {
+  height: 100vh;
+  background: url(../img/home-bg.png) no-repeat center top;
+  background-size: cover;
+}
+
+.home {
+  padding-top: 178px;
+  padding-bottom: 70px;
+}
+
+.home__logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 33px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 55px;
+}
+
+.home__logo span {
+  font-size: 23px;
+  display: block;
+}
+
+.home__title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.home__line {
+  background: #fff;
+  height: 2px;
+  width: 80px;
+  margin: 35px 0;
+}
+
+.home__desc {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.home__arrow {
+  display: block;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  margin-top: 142px;
+}
