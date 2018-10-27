@@ -30,7 +30,8 @@ p {
 }
 
 .header {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   background: url(../img/home-bg.png) no-repeat center top;
   background-size: cover;
 }
@@ -147,37 +148,122 @@ p {
   font-weight: 300;
 }
 
-.gallery-image {
-  cursor: pointer;
+.gallery {
+}
+
+.gallery-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
   position: relative;
-  display: block;
-  margin-bottom: 26px;
 }
 
-.gallery-text-wrap {
+.gallery-item:not(.urban) {
+  height: 373px;
+}
+
+.nature {
+  background-image: url("../img/nature.png");
+  width: calc(60% - 25px);
+  float: left;
+}
+
+.urban {
+  background-image: url("../img/urban.png");
+  width: 40%;
+  float: right;
+  height: 760px;
+}
+
+.gallery-item.people,
+.gallery-item.wedding {
+  height: 361px;
+}
+
+.people {
+  background-image: url("../img/people.png");
+  width: calc(30% - 25px);
+  float: left;
+}
+
+.wedding {
+  background-image: url("../img/wedding.png");
+  width: calc(30% - 25px);
+  float: right;
+  margin-right: 25px;
+}
+
+.architecture {
+  background-image: url("../img/archi.png");
+  width: calc(60% - 25px);
+  float: left;
+}
+
+.animals {
+  background-image: url("../img/animals.png");
+  width: 40%;
+  float: right;
+}
+
+.gallery-box {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
   text-align: center;
 }
 
-.gallery-text h2 {
-  border-bottom: 1px solid;
+.gallery-title {
+  font-size: 25px;
   font-family: "Playfair Display", serif;
-  padding-bottom: 10px;
-  margin: 0;
   text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 12px;
 }
 
-.gallery-text p {
-  margin: 0;
+.gallery-desc {
+  font-weight: 400;
   font-size: 16px;
+}
+
+.corners {
+}
+
+.corners:hover {
+  background: linear-gradient(to right, #fff 2px, transparent 2px) 0 0,
+    linear-gradient(to right, #fff 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, #fff 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, #fff 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, #fff 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, #fff 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, #fff 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, #fff 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 18px;
+  cursor: pointer;
+}
+
+.btn-gallery-wrap {
+  text-align: center;
+  padding: 60px;
+}
+
+.btn-gallery {
+  height: 50px;
+  width: 200px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #d07c7c;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-gallery:hover {
+  background-color: #dd6767;
 }
