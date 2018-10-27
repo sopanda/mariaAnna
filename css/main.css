@@ -267,3 +267,33 @@ p {
 .btn-gallery:hover {
   background-color: #dd6767;
 }
+
+.world__wrap {
+  padding: 140px 0;
+}
+
+.see-carousel {
+  color: #595959;
+  max-width: 564px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.see-carousel blockquote {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.see-carousel cite {
+  font-style: 14px;
+}
+
+.slick-dots {
+  bottom: -68px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: #d07c7c;
+  font-size: 16px;
+}
