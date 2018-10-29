@@ -297,3 +297,69 @@ p {
   color: #d07c7c;
   font-size: 16px;
 }
+
+.video {
+  height: 100%;
+  background: url(../img/watch-video-bg.png) no-repeat center top;
+  background-size: cover;
+}
+
+.video__wrap {
+  padding: 130px 0;
+  max-width: 410px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video__line {
+  background: linear-gradient(
+    32deg,
+    transparent 50%,
+    #000 51%,
+    transparent 51%
+  );
+  height: 96px;
+  width: 166px;
+}
+.video__line:first-child {
+  margin-bottom: 7px;
+}
+.video__line:last-child {
+  margin-left: auto;
+  margin-top: 7px;
+}
+.video__arrow {
+  background: url("../img/angle-right.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.video__play {
+  width: 70px;
+  height: 55px;
+  background: linear-gradient(to right, #000 1px, transparent 1px) 0 0,
+    linear-gradient(to right, #000 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, #000 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, #000 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, #000 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, #000 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, #000 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, #000 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  cursor: pointer;
+  margin: 0 auto;
+  position: relative;
+}
+.video__watch {
+  position: absolute;
+  width: 112px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  top: 78px;
+  right: -24px;
+  display: block;
+}
