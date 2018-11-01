@@ -102,6 +102,16 @@ p {
 }
 
 .menu {
+  margin-left: auto;
+}
+
+.about__navigation {
+  width: 100%;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  float: right;
 }
 
 .menu__item a {
@@ -264,11 +274,12 @@ p {
   transition: all 0.3s ease 0s;
 }
 
-.btn-gallery:hover {
+.btn-gallery:hover,
+.btn-contact:hover {
   background-color: #dd6767;
 }
 
-.world__wrap {
+.world {
   padding: 140px 0;
 }
 
@@ -362,4 +373,130 @@ p {
   top: 78px;
   right: -24px;
   display: block;
+}
+.follow {
+  padding: 137px 0;
+}
+.social__item {
+  padding: 40px;
+  font-size: 23px;
+}
+.social__item a {
+  display: block;
+  color: #696969;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+.social__item a:hover {
+  border-radius: 50%;
+  background-color: #dd6767;
+  color: #fff;
+}
+.contact {
+  position: relative;
+  height: 100%;
+}
+.contact::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/contact.png) no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+.contact__wrap {
+  padding-top: 74px;
+  padding-bottom: 126px;
+  width: 100%;
+}
+.contact__under,
+.contact__requeued {
+  font-weight: 300;
+  font-size: 14px;
+  color: #908a8a;
+  text-align: center;
+}
+.contact__form {
+  max-width: 586px;
+  margin: 0 auto;
+}
+.contact__form input,
+.contact__form textarea {
+  border-radius: 0;
+  border: 1px solid #d07c7c;
+}
+.btn-contact {
+  width: 145px;
+  height: 50px;
+  background-color: #d07c7c;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0%;
+  margin-left: auto;
+  transition: all 0.3s ease 0s;
+}
+.contact__requeued {
+  text-align: left;
+  line-height: 50px;
+}
+.text-btn-group {
+  align-items: center;
+}
+input,
+input::-webkit-input-placeholder,
+textarea,
+textarea::-webkit-input-placeholder {
+  font-size: 13px;
+}
+.footer {
+  padding: 30px 0;
+  color: #000;
+}
+.footer .row {
+  text-align: center;
+}
+.footer i {
+  font-size: 26px;
+  color: #000;
+}
+.footer .home__logo {
+  color: #000;
+  font-size: 21px;
+  margin-bottom: 24px;
+}
+.footer .home__logo span {
+  font-size: 15px;
+}
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #908a8a;
+}
+@media screen and (max-width: 768px) {
+  .menu__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .social__item {
+    padding: 0;
+  }
+  .video__line {
+    height: 0;
+  }
+  .gallery-item {
+    float: none;
+    width: 100%;
+  }
+  .menu {
+    text-align: center;
+  }
 }

@@ -1,3 +1,5 @@
 $(".see-carousel").slick({
-  dots: true
+  dots: true,
+  prevArrow: false,
+  nextArrow: false
 });
