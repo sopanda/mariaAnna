@@ -483,7 +483,7 @@ textarea::-webkit-input-placeholder {
 }
 @media screen and (max-width: 768px) {
   .menu__item:not(:last-child) {
-    margin-right: 0;
+    margin-right: 10px;
     margin-bottom: 15px;
   }
   .social__item {
